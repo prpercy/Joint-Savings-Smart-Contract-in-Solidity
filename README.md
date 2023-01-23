@@ -17,7 +17,7 @@ The goal of the program is to achieve following:
 
 > Program uses Remix IDE
 
-> Program uses Solidity programming language
+> Program uses Solidity programming language (version 0.5.0)
 
 ---
 
@@ -46,9 +46,7 @@ Go to:
 > After deployment, contract and associated functions can be seen as follows:
 ![app](Execution_Results/0_successful_deployment_2.png)
 
-> Assign the accounts to JointSavings Contract
-Account 1 address: 0x0c0669Cd5e60a6F4b8ce437E4a4A007093D368Cb
-Account 2 address: 0x7A1f3dFAa0a4a19844B606CD6e91d693083B12c0
+> Assign the accounts to JointSavings Contract (Account 1 address: 0x0c0669Cd5e60a6F4b8ce437E4a4A007093D368Cb; Account 2 address: 0x7A1f3dFAa0a4a19844B606CD6e91d693083B12c0)
 ![app](Execution_Results/1_assign_accounts.png)
 
 > Deposit 1 ETH (as 1000000000000000000 wei)
@@ -62,7 +60,7 @@ Account 2 address: 0x7A1f3dFAa0a4a19844B606CD6e91d693083B12c0
 ![app](Execution_Results/4_deposit_5ETH_1.png)
 ![app](Execution_Results/4_deposit_5ETH_2.png)
 
-> After these 3 deposits balance of deploying party reduces by 16 (1+10+5 eth) eth and some gas fees. In this case from 100 ETH to 83.xx ETH.
+> After these 3 deposits balance of deploying party reduces by 16 (1+10+5 eth) eth and some gas fees. In this case from 100 ETH to 83.99x ETH.
 ![app](Execution_Results/5_balance_post3deposits.png)
 
 > LastToWithdraw address and amount are zero since no withdrawl is invoked till this point
@@ -70,10 +68,13 @@ Account 2 address: 0x7A1f3dFAa0a4a19844B606CD6e91d693083B12c0
 
 > Withdraw 5 ETH to account one (0x0c0669Cd5e60a6F4b8ce437E4a4A007093D368Cb)
 ![app](Execution_Results/7_withdraw_5ETH_accountOne.png)
+Last withdrawn address is updated to 0x0c0669Cd5e60a6F4b8ce437E4a4A007093D368Cb and last withdrawn amount to 5 ETH (i.e. 5*10^18 Wei)
 
 > Withdraw 10 ETH to account one (0x7A1f3dFAa0a4a19844B606CD6e91d693083B12c0)
 ![app](Execution_Results/8_withdraw_10ETH_accountTwo.png)
+Last withdrawn address is updated to 0x7A1f3dFAa0a4a19844B606CD6e91d693083B12c0 and last withdrawn amount to 10 ETH (i.e. 10*10^18 Wei)
 
+> Results suggests a working contract has been deployed.
 
 ---
 
