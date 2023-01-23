@@ -70,9 +70,10 @@ Go to:
 ![app](Execution_Results/7_withdraw_5ETH_accountOne.png)
 Last withdrawn address is updated to 0x0c0669Cd5e60a6F4b8ce437E4a4A007093D368Cb and last withdrawn amount to 5 ETH (i.e. 5*10^18 Wei)
 
-> Withdraw 10 ETH to account one (0x7A1f3dFAa0a4a19844B606CD6e91d693083B12c0)
+> Withdraw 10 ETH to account two (0x7A1f3dFAa0a4a19844B606CD6e91d693083B12c0)
 ![app](Execution_Results/8_withdraw_10ETH_accountTwo.png)
 Last withdrawn address is updated to 0x7A1f3dFAa0a4a19844B606CD6e91d693083B12c0 and last withdrawn amount to 10 ETH (i.e. 10*10^18 Wei)
+Also, after 2 withdrawls, contract balance is 1 ETH (=16 ETH - 5 ETH - 10 ETH)
 
 > Results suggests a working contract has been deployed.
 
